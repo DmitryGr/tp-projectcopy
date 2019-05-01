@@ -13,8 +13,8 @@ install:
     - sudo make
 
 before script:
-    - chmod 777 run.sh
+    - cd /home/travis
+    - chmod 777 script.sh
 
 script:
-    - cd /home/travis
     - ./run.sh
