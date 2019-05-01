@@ -1,0 +1,12 @@
+sudo: required
+
+before install:
+    chmod 777 run.sh
+
+language: cpp
+
+compiler: 
+    - g++
+
+script:
+    - run.sh
