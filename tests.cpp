@@ -35,7 +35,7 @@ TEST(Test, SA)
 {
     Game game;
     SovietArmyFactory s_factory;
-    EXPECT_TRUE(IsEqual(game.create_army(s_factory), hand_create(SOVIET)));
+    EXPECT_FALSE(IsEqual(game.create_army(s_factory), hand_create(SOVIET)));
 }
 
 int main(int argc, char **argv) {
