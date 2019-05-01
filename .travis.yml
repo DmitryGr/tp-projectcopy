@@ -16,4 +16,4 @@ before script:
     - chmod 777 run.sh
 
 script:
-    - ./run.sh
+    - bash ./run.sh
