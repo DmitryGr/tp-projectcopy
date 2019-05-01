@@ -12,7 +12,7 @@ install:
     - sudo cmake CMakeLists.txt
     - sudo make
 
-before script:
+before_script:
     - cd /home/travis
     - chmod 777 script.sh
 
