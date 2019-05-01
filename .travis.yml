@@ -8,14 +8,12 @@ compiler:
 install:
     - sudo apt-get install cmake
     - sudo apt-get install libgtest-dev
-    - pwd
     - cd /usr/src/gtest
     - sudo cmake CMakeLists.txt
     - sudo make
-    - pwd
 
 before_script:
-    - cd ./travis
+    - cd /home/travis/build/DmitryGr/tp-projectcopy
     - chmod 777 run.sh
 
 script:
