@@ -8,6 +8,8 @@ compiler:
 install:
     - sudo apt-get install cmake
     - sudo apt-get install libgtest-dev
+    - sudo cmake /usr/src/gtest/CMakeLists.txt
+    - sudo /usr/src/gtest/make
 
 before script:
     - chmod 777 run.sh
