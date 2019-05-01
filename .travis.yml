@@ -5,15 +5,8 @@ language: cpp
 compiler: 
     - g++
 
-install:
-    - sudo apt-get install cmake
-    - sudo apt-get install libgtest-dev
-    - cd /usr/src/gtest
-    - sudo cmake CMakeLists.txt
-    - sudo make
-
 before script:
     - chmod 777 run.sh
 
 script:
-    - bash ./run.sh
+    - ./run.sh
