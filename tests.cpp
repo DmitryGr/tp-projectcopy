@@ -36,7 +36,6 @@ TEST(Test, SA)
     Game game;
     SovietArmyFactory s_factory;
     EXPECT_TRUE(IsEqual(game.create_army(s_factory), hand_create(SOVIET)));
-    exit(1);
 }
 
 int main(int argc, char **argv) {
