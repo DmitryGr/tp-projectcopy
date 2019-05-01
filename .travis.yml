@@ -1,17 +1,19 @@
 sudo: required
 
 before install:
-    sudo apt-get install cmake
-    sudo apt-get install libgtest-dev
-    cd /usr/src/gtest
-    sudo cmake CMakeLists.txt
-    sudo make
     chmod 777 run.sh
 
 language: cpp
 
 compiler: 
     - g++
+
+before script:
+    sudo apt-get install cmake
+    sudo apt-get install libgtest-dev
+    cd /usr/src/gtest
+    sudo cmake CMakeLists.txt
+    sudo make
 
 script:
     - ./run.sh
