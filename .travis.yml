@@ -1,8 +1,5 @@
 sudo: required
 
-before script:
-    - chmod 777 run.sh
-
 language: cpp
 
 compiler: 
@@ -14,7 +11,9 @@ install:
     - cd /usr/src/gtest
     - sudo cmake CMakeLists.txt
     - sudo make
-    - cd ~
+
+before script:
+    - chmod 777 run.sh
 
 script:
     - ./run.sh
