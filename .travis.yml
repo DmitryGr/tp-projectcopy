@@ -14,7 +14,7 @@ install:
 
 before_script:
     - cd /home/travis
-    - chmod 777 script.sh
+    - chmod 777 run.sh
 
 script:
     - ./run.sh
