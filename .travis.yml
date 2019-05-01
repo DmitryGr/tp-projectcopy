@@ -9,4 +9,4 @@ compiler:
     - g++
 
 script:
-    - run.sh
+    - ./run.sh
