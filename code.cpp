@@ -100,17 +100,17 @@ class Army{
 
         }
         void add_soldiers(vector<Infantry*> added){
-            for (auto soldier: added){
+            for (Infantry* soldier: added){
                 infantry.push_back(soldier);
             }
         }
         void add_tank(vector<Tank*> added){
-            for (auto tank: added){
+            for (Tank* tank: added){
                 tanks.push_back(tank);
             }
         }
         void add_artillery(vector<Artillery*> added){
-            for (auto artillery_unit: added){
+            for (Artillery* artillery_unit: added){
                 artillery.push_back(artillery_unit);
             }
         }
@@ -140,20 +140,20 @@ bool operator ==(const Army& a, const Army& b)
 {
     if (a.infantry.size() != b.infantry.size() || a.tanks.size() != b.tanks.size() || a.artillery.size() != b.artillery.size()) return false;
     vector<Infantry*> inf_a, inf_b;
-    for (auto unit : a.infantry) inf_a.push_back(unit);
-    for (auto unit : b.infantry) inf_b.push_back(unit);
+    for (Infantry* unit : a.infantry) inf_a.push_back(unit);
+    for (Infantry* unit : b.infantry) inf_b.push_back(unit);
     for (int i=0; i < inf_a.size(); i++){
         if ((*inf_a[i]) != (*inf_b[i])) return false;
     }
     vector<Tank*> tank_a, tank_b;
-    for (auto unit : a.tanks) tank_a.push_back(unit);
-    for (auto unit : b.tanks) tank_b.push_back(unit);
+    for (Tank* unit : a.tanks) tank_a.push_back(unit);
+    for (Tank* unit : b.tanks) tank_b.push_back(unit);
     for (int i=0; i < tank_a.size(); i++){
         if ((*tank_a[i]) != (*tank_b[i])) return false;
     }
     vector<Artillery*> art_a, art_b;
-    for (auto unit : a.artillery) art_a.push_back(unit);
-    for (auto unit : b.artillery) art_b.push_back(unit);
+    for (Artillery* unit : a.artillery) art_a.push_back(unit);
+    for (Artillery* unit : b.artillery) art_b.push_back(unit);
     for (int i=0; i < art_a.size(); i++){
         if ((*art_a[i]) != (*art_b[i])) return false;
     }
