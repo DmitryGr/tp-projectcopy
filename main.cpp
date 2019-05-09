@@ -3,5 +3,6 @@
 using namespace std;
 
 int main() {
+    exit(1);
     run();
 }
