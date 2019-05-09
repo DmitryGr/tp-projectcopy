@@ -23,7 +23,7 @@ Army* hand_create(bool if_soviet){
     return kek;
 }
 
-::testing::AssertionResult IsEqual(Army* a, Army* b)
+::testing::AssertionResult IsEqual (Army* a, Army* b)
 {
 	if ((*a) == (*b))
 		return ::testing::AssertionSuccess();
