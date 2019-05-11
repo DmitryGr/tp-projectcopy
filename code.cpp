@@ -238,7 +238,7 @@ int run(){
     Army* soviet_army = game.create_army(s_factory);
     GermanArmyFactory g_factory;
     Army* german_army = game.create_army(g_factory);
-    cout << "Something`s been created" << endl;
+    cout << "Something`s been created!" << endl;
     return 0;
 }
 
