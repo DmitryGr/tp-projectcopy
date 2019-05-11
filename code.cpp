@@ -223,7 +223,7 @@ class GermanArmyFactory : public ArmyFactory{
 
 class Game{
     public:
-        Army* create_army(ArmyFactory  &factory){
+        Army* create_army(ArmyFactory   &factory){
             Army* new_army = new Army();
             new_army->add_soldiers(factory.create_infantry());
             new_army->add_tank(factory.create_tanks());
