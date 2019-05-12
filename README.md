@@ -1,2 +1,2 @@
-# tp-projectcopy
-That`s a copy of my TP patterns homework
+Здесь развернута система Travis CI с оповощениями телеграм-бота @techprog_travis_bot. Для того, чтобы бот работал, запустите код.
+Затем читайте description бота
